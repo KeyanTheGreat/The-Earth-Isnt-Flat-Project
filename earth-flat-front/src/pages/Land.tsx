@@ -1,25 +1,26 @@
 import React from 'react';
 import '../styles/Land.css';
+import { useNavigate } from "react-router-dom";
 // console.log("fish0")
 
 // import { SparklesCore } from "../fancy/sparkles"
 // console.log(SparklesCore)
 
 function Land() {
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+        let path = `../home`; 
+        navigate(path);
+    }
+
     return (
       <div className="h-screen w-screen bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <div id="stars-group-1"></div>
-        <div id="stars-group-2"></div>
-        <div id="stars-group-3"></div>
-        <div id="stars-group-4"></div>
-        <div id="stars-group-5"></div>
-        <div id="stars-group-6"></div>
 
-        {/* <div id="stars-group-1"></div>
-        <div id="stars-group-2"></div> */}
+        <div className="stars"></div>
+        <div className="twinkling"></div>
 
         <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
-          The Earth Isn't Flat
+          The Earth Is Flat!
         </h1>
 
         {/* <div id="stars-group-3"></div>
@@ -44,7 +45,9 @@ function Land() {
    
           {/* Radial Gradient to prevent sharp edges */}
           <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-          <button type="button"> Click me! </button>
+          {/* <button className="button"> View the Flat Earth! </button> */}
+          {/* <button className="button-64" role="button"><span className="text">Button 64</span></button> */}
+          <button className="button-19" role="button" onClick={routeChange}>View the Earth</button>
         </div>
 
       </div>
