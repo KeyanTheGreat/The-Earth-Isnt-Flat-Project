@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 
 function Main() {
     const { unityProvider } = useUnityContext({
-        loaderUrl: "build2/Build/build2.loader.js",
-        dataUrl: "build2/Build/build2.data.unityweb",
-        frameworkUrl: "build2/Build/build2.framework.js.unityweb",
-        codeUrl: "build2/Build/build2.wasm.unityweb",
+        loaderUrl: "build3(Keyan)/Build/build3(Keyan).loader.js",
+        dataUrl: "build3(Keyan)/Build/build3(Keyan).data.unityweb",
+        frameworkUrl: "build3(Keyan)/Build/build3(Keyan).framework.js.unityweb",
+        codeUrl: "build3(Keyan)/Build/build3(Keyan).wasm.unityweb",
         // webglContextAttributes: {
         //     preserveDrawingBuffer: true,
         // }
