@@ -19,7 +19,7 @@ public class collider : MonoBehaviour
     }
     void Update()
     {
-        if(counter == 6){
+        if(counter == 9){
             words = "The sun spins around the disk like a record player, day in and out, as does the moon. But how are they kept there? Um, I, that?s a good question? wait. How are they-";
         }
     }
